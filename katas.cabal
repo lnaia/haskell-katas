@@ -1,8 +1,10 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 07b1b96661a3e948b390501ac56d472faa581eac027e9cb258365338d3595130
+-- hash: 948b7fd84c3021bd337946f99303551ff4b4597ee8e37efa08ceed05bdd33594
 
 name:                katas
 version:             0.1.0.0
@@ -11,9 +13,9 @@ license-file:        LICENSE
 author:              Attila Domokos <adomokos@gmail.com>
 maintainer:          adomokos@gmail.com
 copyright:           2018 Attila Domokos
+license:             BSD3
 category:            Console App
 build-type:          Simple
-cabal-version:       >= 1.10
 
 executable katas-exe
   main-is: Main.hs
