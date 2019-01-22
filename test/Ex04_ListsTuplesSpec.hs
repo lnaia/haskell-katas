@@ -19,6 +19,5 @@ spec = do
       zip [1..3] ["one", "two", "three"] `shouldBe` [(1, "one"), (2, "two"), (3, "three")]
       zip [1..3] ["apple", "orange", "cherry"] `shouldBe` [(1, "apple"), (2, "orange"), (3, "cherry")]
     it "can calculate right triangle that has the perimeter of 24" $ do
-      pending
-      let triangles = []
-      triangles `shouldBe` [(6, 8, 10)]
+      let triangles = [ (a,b,c) | c <- [1..10], b <- [1..10], a <- [1..10],  a <- [1..b], a^2 + b^2 == c^2,  a+b+c == 24]
+      [head(triangles)] `shouldBe` [(6, 8, 10)]
